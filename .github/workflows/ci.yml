@@ -1,4 +1,5 @@
 name: GitHub CI Pipeline
+
 on:
   push:
     branches:
@@ -10,13 +11,13 @@ jobs:
 
     steps:
       - name: Checkout Repository
-      uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Display Message
-      run: echo "Build Started"
+        run: echo "Build Started"
 
       - name: List Files
-      run: ls
+        run: ls
 
       - name: Build Successful
-      run: echo "Build Completed Successfully"
+        run: echo "Build Completed Successfully"
